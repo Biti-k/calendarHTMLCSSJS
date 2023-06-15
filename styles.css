@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: rgb(98, 33, 158);
+    color: white;
+/*     overflow-y: hidden;
+    overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
+}
+
+.header h1{
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    margin: 0;
+    width: 100%;
+    background: rgb(46, 8, 82);
+    display: flex;
+    justify-content: center;
+}
+
+#calendar{
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(7, 150px);
+    gap: 3px;
+}
+
+.day{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    background-color: #9963f1;
+    border-radius: 3px;
+    transition: all 250ms;
+}
+
+.day:hover{
+    background-color: #b48df1;
+}
+
+.day-text{
+    margin: 0;
+}
+
+.day-number{
+    margin: auto;
+    text-align: center;
+    font-size: 35px;
+    padding: 25px;
+}
+
+#monthYear{
+    margin: 0;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.nav{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    width: 700px;
+    justify-content: space-between;
+}
+
+button{
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(102, 0, 85);
+    box-shadow: 4px 4px 10px rgb(53, 0, 53);
+    cursor: pointer;
+    transition: 250ms ease;
+}
+
+button:hover{
+    background-color: rgb(128, 19, 109);
+    transform: scale(1.2);
+}
